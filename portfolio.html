@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viwewport" contents="width=device-width,initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://kit.fontawesome.com/e3e0f3d6fc.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="father-board">
+	<div class="main-board">
+		<div><img src="shivz.jpg"></div>
+		<div class="logo">
+			<a href="https://github.com/Shivam-alt-sketch"><i class="fab fa-github"></i></a>
+			<a href="https://shivampakade.blogspot.com/2021/04/bidirectional-visitor-counter-to-home.html?m=1"><i class="fab fa-blogger"></i></a>
+			<a href="https://www.linkedin.com/in/shivam-pakade-4430871a8/"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://mail.google.com/"><i class="fas fa-at"></i></a>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card2"><p id='demo'></p></div>
+		<div class="card3"><button onclick="typeWriter()">click me</button>
+</div>
+	</div>
+	<div class="skillbox"><div class="skillheader">
+		<h2>My Skills</h2>
+	</div>
+    <div class="progressbars"><div id="html"><i class="fab fa-html5"></i><div class="htmlprogress">
+    <div class="progress-container">
+    	<div class="skill-html">80%</div>
+    </div>
+ </div>
+</div>
+    <div class="progressbar2"><div id="html"><i class="fab fa-css3-alt"></i><div class="htmlprogress"><div class="progress-container"><div class="skill-css">60%</div></div></div></div>
+</div>
+<div class="progressbar3"><div id="html"><i class="fab fa-js"></i><div class="htmlprogress"><div class="progress-container"><div class="skill-js">30%</div></div></div></div>
+
+<div class="progressbar5"><div id="html"><i class="fab fa-java"></i><div class="htmlprogress"><div class="progress-container"><div class="skill-html">80%</div></div></div></div>
+
+<div class="progressbar4"><div id="html"><i class="fab fa-python"></i><div class="htmlprogress"><div class="progress-container"><div class="skill-css">60%</div></div></div></div></div></div>
+
+
+</div>
+<div class="projects-board"><div class="skillheader"><h2>My Projects</h2></div>
+<a href="https://shivam-alt-sketch.github.io/trackcorona.github.io/"><div class="project-bg"><img src="Project.png" alt="Covid-19 Tarcker" target="_blank"></a></div>
+</div>
+<div class="last">
+	
+</div>
+</body>
+
+	<script>
+		var i = 0;
+		var txt='Hello my name is Shivam Satish Pakade. I am a student Engineering student of branch Electronics and Telecommunication. I have a very keen intreast in web devlopment. I can do programming in languages like HTML, CSS, Javascript, Python, Java.';
+		var speed = 50;
+		function typeWriter(){
+			if (i < txt.length) {
+				document.getElementById('demo').innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter , speed);
+			}
+		}
+	</script>
+</html>
